@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
 using SchoolManagementStudio.Data;
+using SchoolManagementStudio.Data.TableModels;
 
 namespace SchoolManagementStudio.Controllers
 {
@@ -19,11 +20,11 @@ namespace SchoolManagementStudio.Controllers
             ViewData["Runtime"] = isMono ? "Mono" : ".NET";
 
             // My code
-            var context = new SchoolContext();
-            context.AddStudent();
+            // var context = new SchoolContext();
+            // context.AddStudent();
+            List<Course> courses = DataManagement.GetAllCourses();
 
-
-            return View();
+            return View(courses);
         }
     }
 }
