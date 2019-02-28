@@ -26,5 +26,16 @@ namespace SchoolManagementStudio.Controllers
 
             return View(courses);
         }
+
+
+        // New Test Page
+        public ViewResult TestPage() {
+
+            List<Course> courses = DataManagement.GetAllCourses();
+
+            return View(courses);
+        }
+
     }
+
 }
