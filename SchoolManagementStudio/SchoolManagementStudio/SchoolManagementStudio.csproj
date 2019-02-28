@@ -84,6 +84,7 @@
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
     <Folder Include="Data\" />
+    <Folder Include="Data\TableModels\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -92,6 +93,10 @@
     </Compile>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Data\SchoolContext.cs" />
+    <Compile Include="Data\TableModels\Student.cs" />
+    <Compile Include="Data\DataManagement.cs" />
+    <Compile Include="Data\TableModels\Course.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
